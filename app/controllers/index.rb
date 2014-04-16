@@ -9,5 +9,5 @@ end
 
 post '/gallery' do # this probably wont be a post with ajax
   # search for moments
-  redirect '/galerry'
+  redirect '/gallery'
 end
