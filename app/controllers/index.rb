@@ -4,4 +4,10 @@ get '/' do
 end
 
 get '/gallery' do
+  erb :gallery
+end
+
+post '/gallery' do # this probably wont be a post with ajax
+  # search for moments
+  redirect '/gallery'
 end
