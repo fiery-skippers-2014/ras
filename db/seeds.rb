@@ -1,4 +1,28 @@
-BANDNAMES = [ "Joy Division", "New Order", "The Smiths", "The Sisters of Mercy", "Wye Oak", "Thao and the Get Down Stay Down",
-          "Siouxsie and the Banshees", "Interpol" ]
+Tag.create(description: "sad")
+Tag.create(description: "happy")
+Tag.create(description: "angry")
+Tag.create(description: "orange")
+Tag.create(description: "dog")
+Tag.create(description: "springtime")
 
-BANDNAMES.each{ |band_name| Band.create(name: band_name) }
+Photo.create(title: "BALTO, THE OLD DOG", url: "http://500px.com/photo/51177220/balto-the-old-dog-by-j%C3%B8rn-allan-pedersen")
+Photo.create(title: "happiness.", url: "http://500px.com/photo/55758386/happiness-by-ayan-villafuerte" )
+Photo.create(title: "Sad Man", url: "http://500px.com/photo/66885719/sad-man-by-max-rinaldi")
+Photo.create(title: "YeePeng Festival ChiangMai Thailand", url: "http://500px.com/photo/19140813/yeepeng-festival-chiangmai-thailand-by-chattakan-kosol")
+Photo.create(title: "Oops", url: "http://500px.com/photo/1053641/oops-by-marsel-van-oosten")
+Photo.create(title: "Magic mushroom", url: "http://500px.com/photo/46369348/magic-mushroom-by-andre-villeneuve")
+Photo.create(title: "Spring", url: "http://500px.com/photo/64472617/spring-by-johannes-oehl")
+Photo.create(title: "Sleeping Angel", url: "http://500px.com/photo/62340053/sleeping-angel-by-gitpix-")
+Photo.create(title: "a springtime greeting", url: "http://500px.com/photo/27861829/a-springtime-greeting-by-sonja-probst")
+Photo.create(title: "Half Pint", url: "http://500px.com/photo/33910583/half-pint-by-adrienne-elliot")
+
+Moment.create(tag_id: 5, photo_id: 1)
+Moment.create(tag_id: 2, photo_id: 2)
+Moment.create(tag_id: 1, photo_id: 3)
+Moment.create(tag_id: 4, photo_id: 4)
+Moment.create(tag_id: 3, photo_id: 5)
+Moment.create(tag_id: 6, photo_id: 6)
+Moment.create(tag_id: 6, photo_id: 7)
+Moment.create(tag_id: 6, photo_id: 8)
+Moment.create(tag_id: 6, photo_id: 9)
+Moment.create(tag_id: 6, photo_id: 10)
