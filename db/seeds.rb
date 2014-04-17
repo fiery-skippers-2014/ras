@@ -5,25 +5,21 @@ Tag.create(description: "orange")
 Tag.create(description: "dog")
 Tag.create(description: "springtime")
 
-Photo.create(title: "BALTO, THE OLD DOG", url: "http://ppcdn.500px.org/64650127/8f3c7f115ab8e16e674d37b90c4aecd044d3a924/3.jpg")
-Photo.create(title: "happiness.", url: "http://ppcdn.500px.org/57345442/0d0a7798c3c47e39b96cf53b1b08d8c5ad8fbed5/3.jpg" )
+Photo.create(title: "BALTO THE OLD DOG", url: "http://ppcdn.500px.org/64650127/8f3c7f115ab8e16e674d37b90c4aecd044d3a924/3.jpg")
+
+Photo.create(title: "happiness", url: "http://ppcdn.500px.org/57345442/0d0a7798c3c47e39b96cf53b1b08d8c5ad8fbed5/3.jpg")
+
 Photo.create(title: "Sad Man", url: "http://ppcdn.500px.org/64415501/d0e2e785d17715f06b715731bfd2fe6b3bca8bc1/3.jpg")
+
 Photo.create(title: "YeePeng Festival ChiangMai Thailand", url: "http://ppcdn.500px.org/57177834/eecf5bdff1a67a7f840da5e085782b308e5505ca/3.jpg")
+
 Photo.create(title: "Oops", url: "http://ppcdn.500px.org/60818176/56cbf2036751b5cf98734ff9862c11ddc53a4f4d/3.jpg")
-Photo.create(title: "Magic mushroom", url: "http:​/​/​ppcdn.500px.org/​65825435/​cb6af396240db0413686f393d6f04702130db504/​3.jpg")
-Photo.create(title: "Spring", url: "http:​/​/​ppcdn.500px.org/​27035329/​ecca7f5ce70cb8331f7eaa73705bb616efb64fe6/​3.jpg")
-Photo.create(title: "Sleeping Angel", url: "http:​/​/​ppcdn.500px.org/​33910583/​d9239d739cee8fb10405d4b446814d1548e5543a/​3.jpg")
-Photo.create(title: "a springtime greeting", url: "http:​/​/​ppcdn.500px.org/​65238543/​56fe9002e4dc453490f583ec7202e679c97d5ef9/​3.jpg")
-Photo.create(title: "Half Pint", url: "http:​/​/​ppcdn.500px.org/​66673777/​d8b2fda9119f6ee8e38b3cd4a78d5e8bdea0fd48/​3.jpg")
+
 
 Moment.create(tag_id: 5, photo_id: 1)
 Moment.create(tag_id: 2, photo_id: 2)
 Moment.create(tag_id: 1, photo_id: 3)
 Moment.create(tag_id: 4, photo_id: 4)
 Moment.create(tag_id: 3, photo_id: 5)
-Moment.create(tag_id: 6, photo_id: 6)
-Moment.create(tag_id: 6, photo_id: 7)
-Moment.create(tag_id: 6, photo_id: 8)
-Moment.create(tag_id: 6, photo_id: 9)
-Moment.create(tag_id: 6, photo_id: 10)
+
 
