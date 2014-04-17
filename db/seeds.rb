@@ -5,7 +5,7 @@ Tag.create(description: "orange")
 Tag.create(description: "dog")
 Tag.create(description: "springtime")
 
-Photo.create(title: "BALTO, THE OLD DOG", url: "http://ppcdn.500px.org/64650127/8f3c7f115ab8e16e674d37b90c4aecd044d3a924/3.jpg")
+Photo.create(title: "BALTO, THE OLD DOG", url: "http://ppcdn.500px.org/51177220/411bc6a3cffeca7ee6483eedd665712cf9ee17c4/1.jpg")
 Photo.create(title: "happiness.", url: "http://ppcdn.500px.org/57345442/0d0a7798c3c47e39b96cf53b1b08d8c5ad8fbed5/3.jpg" )
 Photo.create(title: "Sad Man", url: "http://ppcdn.500px.org/64415501/d0e2e785d17715f06b715731bfd2fe6b3bca8bc1/3.jpg")
 Photo.create(title: "YeePeng Festival ChiangMai Thailand", url: "http://ppcdn.500px.org/57177834/eecf5bdff1a67a7f840da5e085782b308e5505ca/3.jpg")
