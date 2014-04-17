@@ -1,6 +1,12 @@
-# require 'spec_helper'
+require 'spec_helper'
 
 # describe "IndexController (this is a skeleton controller test!)" do
+  describe 'get new moment' do
+    it 'should go to gallery page' do
+      get "/gallery"
+      expect(last_response).to be_ok
+    end
+  end
 
 #   describe 'get all bands' do
 #     it 'should see all bands' do
