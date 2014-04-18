@@ -37,7 +37,6 @@ body {
 
 #container {
   position: absolute;
-  // background-color: lighten($BACKGROUND_COLOR, 5%);
   width: $SITE_WIDTH * 0.9;
   height: $SITE_HEIGHT;
   padding: 0 1vw 0 1vw;
@@ -80,173 +79,63 @@ input:hover {
 th {
   text-align: left;
 }
-.gallery .photo {
-  width: 800px;
-  height: 500px;
-  margin:0 auto;
+
+#gallery {
+  background-color: lighten($BACKGROUND_COLOR, 10%);
+  height: $SITE_HEIGHT * 0.95;
+  width: $SITE_WIDTH * 0.75;
+  text-align: left;
+  padding: 2vh;
+  position: relative;
+  @include border-radius(10px);
 }
-.gallery .photo img {
-  height: inherit;
+
+#photo {
+  background-color: $BACKGROUND_COLOR;
+  width: $SITE_WIDTH * 0.59;
+  height: $SITE_HEIGHT * 0.74;
+  text-align: center;
+  position: absolute;
+  left: 2vh;
+  overflow: hidden;
+}
+
+#image {
+  height: 100%;
   width: auto;
-  display:block;
-  margin: 0 auto;
 }
 
-// #sign_out {
-//   float: right;
-// }
+#tags {
+  background-color: $BACKGROUND_COLOR;
+  height: $SITE_HEIGHT * 0.74;
+  width: $SITE_WIDTH * 0.15;
+  position: absolute;
+  right: 2vh;
+}
 
-// #wrapper {
-//   display: table;
-// }
+#tags_list {
+  list-style: none;
+}
 
-// #login {
-//   height: 95vh;
-//   width: 95vw;
-//   background-image: url('/img/guard.png');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   display: table-cell;
-//   vertical-align: middle;
-//   font-size: 150%;
-//   text-align: center;
-// }
+.tag {
+  color: #8E8E8E;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
 
-// #register {
-//   position: fixed;
-//   height: 19px;
-//   width: 31px;
-//   top: 516px;
-//   left: 85px;
-// }
+#reflection_container {
+  background-color: $BACKGROUND_COLOR;
+  width: $SITE_WIDTH * 0.74;
+  height: $SITE_HEIGHT * 0.17;
+  position: absolute;
+  bottom: 2vh;
+  overflow: hidden;
+  padding: 1vh;
+}
 
-// #missions {
-//   height: 50vh;
-//   overflow: auto;
-// }
-
-// #header {
-//   font-family: $HEADER_FONT;
-//   font-weight: normal;
-//   font-size: 300%;
-//   text-align: center;
-//   color: red;
-//   height: 10vh;
-
-//   &:first-child:first-letter {
-//     font-size: 135%;
-//   }
-// }
-
-// hr {
-//   border: 0;
-//   height: 1px;
-//   @include background-image-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.5));
-//   margin: 5px 0 20px 0;
-// }
-
-// .mission {
-//   margin-bottom: 10px;
-//   padding: 15px 10px 15px 70px;
-//   background-image: url('/img/ac_emblem_white.png');
-//   background-repeat: no-repeat;
-//   background-position: 20px;
-//   background-color: lighten($BACKGROUND_COLOR, 10%);
-//   min-height: 100px;
-// }
-
-// .completed {
-//   background-image: url('/img/ac_emblem_gray.png');
-//   opacity: 0.45;
-// }
-
-// .theader {
-//   font-weight: bold;
-//   padding-right: 20px;
-//   font-variant: small-caps;
-//   font-family: $HEADER_FONT;
-//   text-align: right;
-// }
-
-// ul {
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-
-//   li {
-//     float: left;
-//     padding-top: 5px;
-//     font-size: 80%;
-//     font-variant: small-caps;
-
-//     &:before {
-//       content: "[";
-//       padding-right: 3px;
-//     }
-
-//     &:after {
-//       content: "]";
-//       padding-left: 3px;
-//       padding-right: 5px;
-//     }
-//   }
-// }
-
-// a {
-//   text-decoration: none;
-//   color: lighten($BACKGROUND_COLOR, 45%);
-// }
-
-// #inputmission {
-//   text-align: center;
-// }
-
-// #inputmissiontable {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// #updatemission {
-//   margin-bottom: 20px;
-// }
-
-// #login_username, #login_password {
-//   display: block;
-//   text-align: center;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 3px;
-//   font-family: $HEADER_FONT;
-// }
-
-// input {
-//   background-color: darken($TEXT_COLOR, 10%);
-// }
-
-// #submitbutton, #loginbutton {
-//   border: none;
-//   background: transparent;
-//   cursor: pointer;
-//   text-align: center;
-//   padding: 10px 0 10px 0;
-// }
-
-// #submitmessage {
-//   color: darken($TEXT_COLOR, 10%);
-//   font-variant: small-caps;
-//   font-size: 80%;
-//   opacity: 0;
-//   margin-top: -10px;
-// }
-
-// #submitmessage:before {
-//   content: "/ ";
-// }
-
-// #submitmessage:after {
-//   content: " /";
-// }
-
-// button:hover #submitmessage {
-//   display: block;
-// }
+#reflection {
+  font-size: 150%;
+  font-style: italic;
+  padding: 1vh;
+  text-align: center;
+}

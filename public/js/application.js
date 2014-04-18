@@ -1,8 +1,8 @@
 $(window).resize(center_elements);
 
 function center(element, rel_elt){
-  element = element || ("#container")
-  rel_elt = rel_elt || $(element).parent()
+  var element = element || ("#container")
+  var rel_elt = rel_elt || $(element).parent()
 
   $(element).css({
       position:'absolute',
@@ -12,24 +12,44 @@ function center(element, rel_elt){
 }
 
 function center_elements() {
-    center("#container", window);
-    center("#seed_form");
-  }
+  center("#container", window);
+  center("#seed_form");
+  center("#gallery");
+}
+
+function change_img(offset){
+  current_image_index += offset;
+
+  if (current_image_index >= tempImg.length) { current_image_index = 0; }
+  if (current_image_index < 0) { current_image_index = tempImg.length - 1; }
+
+  var moment = tempImg[current_image_index];
+
+  $('#image').fadeOut(function(){
+    $('#image').attr("src", moment.src);
+    $('#image').fadeIn();
+  })
+
+function focus_seed() {
+  $("#seed_input").focus().val("")
+}
+
+function bind_keys() {
+  $("body").keydown(function(e) {
+    if(e.keyCode == 37) { // left
+      change_img(-1);
+    }
+
+    else if(e.keyCode == 39) { // right
+      change_img(1);
+    }
+  });
+}
 
 $(document).ready(function(){
   center_elements();
-  $("#seed_input").focus().val("")
-
-  var thing = tempImg.pop()
-  $('img').attr("src", thing.src)
-  $('body').on('click', ".nextPhoto", function(){
-    var moment = tempImg.pop()
-    $('img').fadeOut('slow', function(){
-      $('img').attr("src", moment.src)
-      $('img').fadeIn('slow')
-    })
-  })
-
+  focus_seed();
+  bind_keys();
   window.onload = setInterval(function(){
     $.ajax({
       type: "get",
@@ -40,4 +60,6 @@ $(document).ready(function(){
     })
     .fail(function(){console.log("fail")})
   },3000);
+
+}
 });

@@ -59,14 +59,58 @@ input:hover {
 th {
   text-align: left; }
 
-.gallery .photo {
-  width: 800px;
-  height: 500px;
-  margin: 0 auto; }
+#gallery {
+  background-color: #1a1a1a;
+  height: 90.25vh;
+  width: 73.5vw;
+  text-align: left;
+  padding: 2vh;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
 
-.gallery .photo img {
-  height: inherit;
-  width: auto;
-  display: block;
-  margin: 200px auto;
-}
+#photo {
+  background-color: black;
+  width: 57.82vw;
+  height: 70.3vh;
+  text-align: center;
+  position: absolute;
+  left: 2vh;
+  overflow: hidden; }
+
+#image {
+  height: 100%;
+  width: auto; }
+
+#tags {
+  background-color: black;
+  height: 70.3vh;
+  width: 14.7vw;
+  position: absolute;
+  right: 2vh; }
+
+#tags_list {
+  list-style: none; }
+
+.tag {
+  color: #8E8E8E;
+  cursor: pointer;
+  padding-bottom: 3px; }
+
+#reflection_container {
+  background-color: black;
+  width: 72.52vw;
+  height: 16.15vh;
+  position: absolute;
+  bottom: 2vh;
+  overflow: hidden;
+  padding: 1vh; }
+
+#reflection {
+  font-size: 150%;
+  font-style: italic;
+  padding: 1vh;
+  text-align: center; }
