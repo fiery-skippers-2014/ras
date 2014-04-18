@@ -19,6 +19,10 @@ function center_elements() {
 
 function change_img(offset){
   current_image_index += offset;
+
+  if (current_image_index >= tempImg.length) { current_image_index = 0; }
+  if (current_image_index < 0) { current_image_index = tempImg.length - 1; }
+
   var moment = tempImg[current_image_index];
 
   $('#image').fadeOut(function(){
