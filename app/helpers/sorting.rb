@@ -6,7 +6,8 @@ helpers do
       moments = tag.photos.map {|photo| photo.url}
     else
       scraper = Scraper::Client.new(search_tag)
-      # HardWorker.perform(scraper.data)
+
+      # Worker.perform_async(scraper.data)
       populate_database(scraper.data)
       Primary.create(title: search_tag)
       tag = Tag.find_by_description(search_tag)
