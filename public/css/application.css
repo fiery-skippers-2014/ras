@@ -55,3 +55,17 @@ input:hover {
   border: none;
   color: white;
   font-size: 3.5em; }
+
+th {
+  text-align: left; }
+
+.gallery .photo {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto; }
+
+.gallery .photo img {
+  height: inherit;
+  width: auto;
+  display: block;
+  margin: 0 auto; }

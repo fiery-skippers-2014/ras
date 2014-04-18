@@ -19,4 +19,14 @@ function center_elements() {
 $(document).ready(function(){
   center_elements();
   $("#seed_input").focus().val("")
-})
+
+  var thing = tempImg.pop()
+  $('img').attr("src", thing.src)
+  $('body').on('click', ".nextPhoto", function(){
+    var moment = tempImg.pop()
+    $('img').fadeOut('slow', function(){
+      $('img').attr("src", moment.src)
+      $('img').fadeIn('slow')
+    })
+  })
+});
