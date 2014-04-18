@@ -1,0 +1,237 @@
+// FONTS
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+// MIXINS
+
+@import '__border_radius';
+@import '__background_size';
+@import '__background_image';
+@import '__transition';
+
+// PARTIALS
+
+// CONSTANTS
+
+$FONT_STACK: Quicksand, Helvetica, sans-serif;
+$HEADER_FONT: "Varela Round";
+$BACKGROUND_COLOR: #000000;
+$TEXT_COLOR: #FFFFFF;
+$HEADER_COLOR: #C0E8FF;
+$SITE_WIDTH: 98vw;
+$SITE_HEIGHT: 95vh;
+$FONT_SIZE: 18px;
+
+// MAIN CSS
+
+body {
+  font-family: $FONT_STACK;
+  font-size: $FONT_SIZE;
+  color: $TEXT_COLOR;
+  width: $SITE_WIDTH;
+  background-color: $BACKGROUND_COLOR;
+  background-image: url('/img/background_blue.jpg');
+  background-repeat: no-repeat;
+}
+
+#container {
+  position: absolute;
+  // background-color: lighten($BACKGROUND_COLOR, 5%);
+  width: $SITE_WIDTH * 0.9;
+  height: $SITE_HEIGHT;
+  padding: 0 1vw 0 1vw;
+  @include border-radius(10px);
+}
+
+#seed_form {
+  text-align: center;
+  width: 100%;
+}
+
+#seed_question {
+  font-family: $HEADER_FONT;
+  color: $HEADER_COLOR;
+  text-shadow: 2px 1px #206890;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  font-size: 4em;
+}
+
+input {
+  @include border-radius(5px);
+}
+
+input:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  @include transition(box-shadow linear 0.4s);
+}
+
+#seed_input {
+  text-align: center;
+  background: none;
+  border: none;
+  color: $TEXT_COLOR;
+  font-size: 3.5em;
+}
+
+// #sign_out {
+//   float: right;
+// }
+
+// #wrapper {
+//   display: table;
+// }
+
+// #login {
+//   height: 95vh;
+//   width: 95vw;
+//   background-image: url('/img/guard.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   display: table-cell;
+//   vertical-align: middle;
+//   font-size: 150%;
+//   text-align: center;
+// }
+
+// #register {
+//   position: fixed;
+//   height: 19px;
+//   width: 31px;
+//   top: 516px;
+//   left: 85px;
+// }
+
+// #missions {
+//   height: 50vh;
+//   overflow: auto;
+// }
+
+// #header {
+//   font-family: $HEADER_FONT;
+//   font-weight: normal;
+//   font-size: 300%;
+//   text-align: center;
+//   color: red;
+//   height: 10vh;
+
+//   &:first-child:first-letter {
+//     font-size: 135%;
+//   }
+// }
+
+// hr {
+//   border: 0;
+//   height: 1px;
+//   @include background-image-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.5));
+//   margin: 5px 0 20px 0;
+// }
+
+// .mission {
+//   margin-bottom: 10px;
+//   padding: 15px 10px 15px 70px;
+//   background-image: url('/img/ac_emblem_white.png');
+//   background-repeat: no-repeat;
+//   background-position: 20px;
+//   background-color: lighten($BACKGROUND_COLOR, 10%);
+//   min-height: 100px;
+// }
+
+// .completed {
+//   background-image: url('/img/ac_emblem_gray.png');
+//   opacity: 0.45;
+// }
+
+// .theader {
+//   font-weight: bold;
+//   padding-right: 20px;
+//   font-variant: small-caps;
+//   font-family: $HEADER_FONT;
+//   text-align: right;
+// }
+
+// ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+
+//   li {
+//     float: left;
+//     padding-top: 5px;
+//     font-size: 80%;
+//     font-variant: small-caps;
+
+//     &:before {
+//       content: "[";
+//       padding-right: 3px;
+//     }
+
+//     &:after {
+//       content: "]";
+//       padding-left: 3px;
+//       padding-right: 5px;
+//     }
+//   }
+// }
+
+// a {
+//   text-decoration: none;
+//   color: lighten($BACKGROUND_COLOR, 45%);
+// }
+
+// #inputmission {
+//   text-align: center;
+// }
+
+// #inputmissiontable {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// #updatemission {
+//   margin-bottom: 20px;
+// }
+
+// #login_username, #login_password {
+//   display: block;
+//   text-align: center;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 3px;
+//   font-family: $HEADER_FONT;
+// }
+
+// input {
+//   background-color: darken($TEXT_COLOR, 10%);
+// }
+
+// #submitbutton, #loginbutton {
+//   border: none;
+//   background: transparent;
+//   cursor: pointer;
+//   text-align: center;
+//   padding: 10px 0 10px 0;
+// }
+
+// #submitmessage {
+//   color: darken($TEXT_COLOR, 10%);
+//   font-variant: small-caps;
+//   font-size: 80%;
+//   opacity: 0;
+//   margin-top: -10px;
+// }
+
+// #submitmessage:before {
+//   content: "/ ";
+// }
+
+// #submitmessage:after {
+//   content: " /";
+// }
+
+// button:hover #submitmessage {
+//   display: block;
+// }
