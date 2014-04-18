@@ -29,4 +29,15 @@ $(document).ready(function(){
       $('img').fadeIn('slow')
     })
   })
+
+  window.onload = setInterval(function(){
+    $.ajax({
+      type: "get",
+      url: "/moments"
+    })
+    .done(function(data){
+      $(".script").replaceWith(data)
+    })
+    .fail(function(){console.log("fail")})
+  },3000);
 });
