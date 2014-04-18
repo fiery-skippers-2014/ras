@@ -10,6 +10,8 @@ require 'rubygems'
 
 require 'uri'
 require 'pathname'
+require 'httparty'
+require 'awesome_print'
 
 require 'pg'
 require 'active_record'

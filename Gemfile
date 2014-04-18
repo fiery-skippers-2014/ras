@@ -16,6 +16,8 @@ gem 'activerecord'
 
 gem 'rake'
 gem 'sinatra-flash'
+gem 'httparty'
+gem 'awesome_print'
 
 gem 'shotgun'
 
