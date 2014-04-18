@@ -13,6 +13,7 @@ require 'pathname'
 require 'httparty'
 require 'awesome_print'
 require 'sidekiq'
+require 'redis'
 
 require 'pg'
 require 'active_record'
