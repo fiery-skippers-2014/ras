@@ -29,6 +29,7 @@ function change_img(offset){
     $('#image').attr("src", moment.src);
     $('#image').fadeIn();
   })
+}
 
 function focus_seed() {
   $("#seed_input").focus().val("")
@@ -39,7 +40,6 @@ function bind_keys() {
     if(e.keyCode == 37) { // left
       change_img(-1);
     }
-
     else if(e.keyCode == 39) { // right
       change_img(1);
     }
@@ -60,6 +60,4 @@ $(document).ready(function(){
     })
     .fail(function(){console.log("fail")})
   },3000);
-
-}
 });
