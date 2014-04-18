@@ -1,8 +1,11 @@
 $(document).ready(function() {
-  var thing = moments.pop()
-  $('img').attr('src', thing)
+  var thing = tempImg.pop()
+  $('img').attr("src", thing.src)
   $('body').on('click', ".nextPhoto", function(){
-    var moment = moments.pop()
-    $('img').attr('src', moment)
+    var moment = tempImg.pop()
+    $('img').fadeOut('slow', function(){
+      $('img').attr("src", moment.src)
+      $('img').fadeIn('slow')
+    })
   })
 });
