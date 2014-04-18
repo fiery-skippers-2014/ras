@@ -95,6 +95,7 @@ DEPENDENCIES
   pg
   rack-test
   rake
+  redis
   rspec
   shotgun
   shoulda-matchers

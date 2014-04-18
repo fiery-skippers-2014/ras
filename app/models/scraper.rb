@@ -3,9 +3,10 @@ require 'json'
 module Scraper
   class Client
     include HTTParty
-    def initialize(search_term)
-      @base_uri = "https://api.500px.com/v1/photos/search/?image_size=4&tags=1&rpp=100&sort=rating&consumer_key=GWStsRosRx2RWF3J0Oc5z8OBB5nIG1PxTEGhcovK&tag="
+    def initialize(search_term, amount)
+      @base_uri = "https://api.500px.com/v1/photos/search/?image_size=4&tags=1&rpp=#{amount}&sort=rating&consumer_key=GWStsRosRx2RWF3J0Oc5z8OBB5nIG1PxTEGhcovK&tag="
       @search_term = search_term
+
     end
 
     def data
