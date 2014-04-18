@@ -11,7 +11,7 @@ function center(element, rel_elt){
   });
 }
 
-function center_elements() { 
+function center_elements() {
     center("#container", window);
     center("#seed_form");
   }
