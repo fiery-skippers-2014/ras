@@ -1,8 +1,17 @@
-<script>var moments = <%= @moments %></script>
+<script>
+  preloads = <%= @moments %>
+  var tempImg = []
+
+  for(var x=0;x<preloads.length;x++) {
+      tempImg[x] = new Image()
+      tempImg[x].src = preloads[x]
+  }
+
+</script>
 <div class="container">
   <section class="gallery">
     <div class="photo">
-    <img src="<%# @photo.url%>" alt="<%# @photo.title %>">
+      <img src="">
     </div>
     <button class="nextPhoto">Next</button>
   </section>

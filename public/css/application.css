@@ -1,6 +1,6 @@
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 1000px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
@@ -9,8 +9,13 @@ th {
   text-align: left;
 }
 .gallery .photo {
-  height: 30%;
-  width: 100%;
-  margin: 20% auto;
-  border: 2px solid black; /* BUGBUG*/
+  width: 800px;
+  height: 500px;
+  margin:0 auto;
+}
+.gallery .photo img {
+  height: inherit;
+  width: auto;
+  display:block;
+  margin: 0 auto;
 }
